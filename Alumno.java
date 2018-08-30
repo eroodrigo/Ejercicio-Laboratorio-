@@ -8,17 +8,34 @@ public class Alumno
   public  Alumno(String nombre,int clave)
   {
       
-     this.nombre=
+     this.nombre=nombre;
+     this.clave=clave;
       
       
       
   }
     
     
-   public void
-    
-    
-    
+   public String dimeElNombre()
+   
+   {
+       return nombre;
+       
+       
+    }
+    public int dimeLaClave()
+   
+   {
+      return clave;
+       
+       
+    }
+   
+    public String toString()//duda
+    {
+        String aux="\nnombre: "+nombre+"\nclave: "+clave;
+        return aux;
+    }
     
     
     

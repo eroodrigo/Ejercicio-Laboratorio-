@@ -26,15 +26,16 @@ public class Laboratorio
     
      
     public void darDeBaja(int clavebaja)
-    {
-        for(int i=0;i<alumnos.size();i++)
+    { boolean retiro =false ;
+        
+        for(int i=0;i<alumnos.size()&& retiro !=false;i++)
         {
             
             Alumno aux = alumnos.get(i);
             if(aux.dimeLaClave()==clavebaja)
             {
                 alumnos.remove(i);
-                
+                retiro=true;
             }
             
         }
@@ -45,7 +46,7 @@ public class Laboratorio
     public void imprimir()
     {   System.out.printf("Alumnos incritos");
         
-        for(int i=0;i<=alumnos.size();i++)
+        for(int i=0;i<alumnos.size();i++)
         {
             Alumno imprimir= alumnos.get(i);
             System.out.println(imprimir);
